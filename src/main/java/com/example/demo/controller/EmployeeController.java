@@ -13,7 +13,7 @@ import java.util.List;
 public class EmployeeController {
     @Autowired
     private EmployeeRepository employeeRepository;
-    @GetMapping
+        @GetMapping
      public List<Employee> getAllEmployee(){
          return employeeRepository.findAll();
      }
